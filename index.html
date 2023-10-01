@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afzal Imam Portfolio Project</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/bf5dfa36e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/LOGO.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Mechanical Engineer || Web Developer</p>
+                <h1>Hi, I'm <span>Afzal Imam</span> and this <br> is my portfolio website,<br> where I showcase my<br> journey, skills, and projects</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------About------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.jpg" alt="user about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <h3>The Engineer with a Code</h3>
+                    <p>In my pursuit of a Mechanical Engineering degree, I've discovered a profound interest in software development and technology. I'm driven by the idea that the synergy of engineering and programming can unlock innovative solutions to real-world challenges. Beyond technical prowess, I pride myself on being an exceptional communicator. Whether it's conveying complex ideas to peers or crafting compelling presentations, I've found my voice in delivering impactful messages that resonate. As I stand on the brink of graduation, I'm excited to channel my skills, experiences, and passion into the tech and engineering landscape.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++</span><br>Basics of C++ along with advanced topics like OOPs.</li>
+                            <li><span>DSA</span><br>Write opitmised code, design algorithms and evaluate its efficiency.</li>
+                            <li><span>HTML/CSS</span><br>Design and build exquisite and responsive webpages.</li>
+                            <li><span>JavaScript</span><br>Make webpages dynamic and interactive. Used to manage data and handle user requests</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Hackathon Winner</span><br>Achieved Rank 1 in the event of Hackathon during techFest'23, SLIET.</li>
+                            <li><span>Basics of C++</span><br>Recieved certificate of achievement from Coding Ninjas for completing the course without penalty.</li>
+                            <li><span>Basics of ChatGPT</span><br>Recieved certificate of achievement from Coding Ninjas for completing the course without penalty.</li>
+                            <li><span>Content Writing</span><br>Recieved letter of recommendation for completing internships from Shyarga Films Pvt. Ltd. & Aadox Pvt. Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.E. (Mechanical Engineering)<br>Sant Longowal Institute Of Engineering & Technology<br>8.74/10.00</li>
+                            <li><span>2016-2018</span><br>I.Sc. (Physics, Chemistry, Maths)<br>Nezamia Public School<br>CBSE-75.80%</li>
+                            <li><span>2016</span><br>SSC (10th)<br>Kiddy Convent High School<br>CBSE-10/10 cgpa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------PROJECTS-------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Responsive Landing Page for GPT-3</h2>
+                    <p>A responsive landing page using React.js. This dynamic web page serves as an informative gateway to OpenAI's chatbot, GPT-3, showcasing its remarkable features and capabilities. Key highlights: Responsive Design, Content Presentation, Interactive Elements.</p>
+                    <a href="https://gpt3-info-page-kx9d.vercel.app/">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <h2>To-Do List</h2>
+                    <p>It is a dynamic and user-friendly to-do list web application created using HTML, CSS, and JavaScript. This application allows users to efficiently manage their tasks using the following functionalities: Add New Tasks, Delete, and Edit existing tasks.</p>
+                    <a href="https://to-do-list-eight-lac.vercel.app/">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Portfolio Website</h2>
+                    <p>It is a dynamic and responsive portfolio website that showcases my expertise in HTML and CSS. </p>
+                    <a href="#home">Learn More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------PORTFOLIO----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.jpg" alt="ChatGPT landing page">
+                    <div class="layer">
+                        <h3>GPT-3 Landing Page</h3>
+                        <p>It is a dynamic and responsive landing page that provides information about the Generative Pre-trained Transformer(GPT-3), which is a language prediction </p>
+                        <a href="https://github.com/Flash3225/gpt3_info-page"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.jpg" alt="Dynamic To-Do List">
+                    <div class="layer">
+                        <h3>Dynamic To-Do List</h3>
+                        <p>It is a responsive and user friendly web-application. It allows user to manage their day-to-day activities with features like: Edit, Delete, & Add New Tasks</p>
+                        <a href="https://github.com/Flash3225/ToDo-List"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work3.jpg" alt="Portfolio Website">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>It is a simple yet elegant portfolio website built using HTML/CSS. It provides basic as well as professional information about the author.</p>
+                        <a href="#home"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Flash3225" class="btn">See more...</a>
+        </div>
+    </div>
+    <!-- ---------------CONTACT--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ak083225@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i> 7903282850</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/afzal.imam.904"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/afzal.25"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/afzalimam25"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.github.com/Flash3225"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./images/myresume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Write Your Name Here" required>
+                        <input type="email" name="Email" placeholder="123@example.com" required>
+                        <textarea name="Query" rows="6" placeholder="Drop a message here..."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright &copy Afzal. <br><i class="fa-solid fa-crop"></i> made using <i class="fa-brands fa-html5"></i> HTML <i class="fa-brands fa-css3"></i> CSS </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"; 
+        }
+    </script>  
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwF8wCFrINKt0C6wojk_k_ssOEG-3gPZcG5diSq8EZup0LC_IDNVkJp5F8eGiZ6adRC/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
