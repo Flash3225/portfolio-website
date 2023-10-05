@@ -30,7 +30,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/FullUser.png);
+    background: #121212;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -334,10 +334,8 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background: url("./images/FullUser-phoneLength.png");
-        background-size: 200px 350px;  
-        background-repeat: no-repeat;
-        background-position: top;
+        background: #121212;
+        height: 100vh;
       }
     .header-text{
         margin-top: 100%;
